@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.main_box {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sidebar_menu {
+    width: 105px; 
+    height: 107vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.1); /* Updated background color to white */
+    color: #333; /* Updated text color to a dark color */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.4s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.user div {
+    display: none;
+}
+
+.user h2 {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #fff; /* Updated muhsin name text color to a dark color */
+}
+
+.user p {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff; /* Updated gmail colour text color to a slightly lighter color */
+}
+
+.user-img {
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.seerat-img {
+    width: 40px; /* dash bord k img ki setting yahan se hoi hai */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li img {
+    width: 30px;
+    margin-right: 15px;
+    filter: invert(1);
+}
+
+ul li p {
+    white-space: nowrap;
+    display: none;
+    color: #fff; /* Dashbar ka text color yahan se chang kara hai */
+}
+
+.sidebar_menu:hover {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.2); /* Updated background color on hover */
+}
+
+.sidebar_menu:hover .user div {
+    display: block;
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu:hover .logo {
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 0, 0, 0.7); /* Updated background color on hover to white with some transparency */
+    color: #26c506; /* Updated text color on hover to a dark color */
+}
+
+.sidebar_menu:hover .star {
+    display: block;
+}
+
+.sidebar_menu:hover .logo-img {
+    margin: 0;
+}
+
+.sidebar_menu:hover ul li {
+    justify-content: flex-start;
+    height: 70; /* This line seems incorrect; height needs a value like '70px' */
+    background-color: rgba(247, 242, 242, 0.1); /* Updated background color on hover to a slightly darker color */
+}
+
+.sidebar_menu:hover ul li p {
+    display: block;
+}
+
+.sidebar_menu:hover ul li img {
+    margin-right: 17px;
+}
